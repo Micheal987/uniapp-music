@@ -1,0 +1,121 @@
+{
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//登录
+		{
+			"path": "views/account/Singin"
+		},
+		//邮箱登录
+		{
+			"path": "views/account/emailsingup"
+		},
+		//手机登录
+		{
+			"path": "views/account/phonesingup"
+		},
+		//用户页面
+		{
+			"path": "views/user/home"
+		},
+		//留言
+		{
+			"path": "views/Comment/Comment"
+		},
+		//我喜欢的音乐
+		{
+			"path": "views/like/like"
+		},
+		//音乐播放页面
+		{
+			"path": "views/song/index"
+		},
+		// //	//主页
+		{
+			"path": "pages/index/index"
+
+		},
+		//推荐歌单
+		{
+			"path": "views/song/play-list"
+		},
+		//搜索
+		{
+			"path": "components/head/search"
+		},
+		{
+			"path": "views/rankings/rankings"
+		},
+		{
+			"path": "views/my/my"
+		},
+		{
+			"path":"views/Search/search"
+		},
+		{
+			"path": "views/Search/searchresults"
+		},
+		{
+			"path": "components/common/palyer"
+		},
+		{
+			"path": "views/collector/collector"
+		},
+		{
+			"path": "views/song/adminsong"
+		},
+		{
+			"path": "views/video/playmv"
+		},
+		{
+			"path": "views/Radio/Radio"
+		},
+		{
+			"path": "views/Radio/playradio"
+		},
+		{
+			"path": "views/Comment/currtensong"
+		},
+		{
+			"path": "views/daymusic/music"
+		},
+		{
+			"path": "views/user/userallsong"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff0000",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/index.png",
+				"selectedIconPath": "static/image/index-select.png",
+				"text": "发现"
+			},
+			{
+				"pagePath": "views/my/my",
+				"iconPath": "static/image/my.png",
+				"selectedIconPath": "static/image/my-select.png",
+				"text": "我的"
+			},
+			{
+				"pagePath": "views/rankings/rankings",
+				"iconPath": "static/image/p-1.png",
+				"selectedIconPath": "static/image/p.png",
+				"text": "排行榜"
+
+			}
+		]
+	}
+
+}
